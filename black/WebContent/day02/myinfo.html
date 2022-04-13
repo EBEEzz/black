@@ -4,12 +4,20 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style>
-	.cyan {
-		color: cyan;
+	.btn {
+		/* display: inline-block; */
+		width: 16.66%;
+		border: none;
+		font-size: 12pt;
+		cursor: pointer;
+	}
+	.btn:hover {
+		background-color: #d85886;
+		color: white;
 	}
 </style>
 </head>
-<body>
+<body style="text-align: center;">
 <!-- 
 	자기자신의 소개페이지를 만들어보세요.
 	
@@ -19,25 +27,183 @@
 	사용태그)
 		h1 ~ h6, a, span, p, pre, br, hr, img
 -->
-	<center>
-		<h1 class="cyan">자기소개 페이지</h1>
-		<p>이름 : <strong>안은비</strong></p>
-		<span>출생년월 : <b>1998년 3월</b></span><br>
-		<span>혈액형 : <b>B</b></span><br>
-		<span>성별 : <b>여</b></span>
-		<p></p>
-		<hr>
-		<p></p>
-		<span>고향 : <b>인천</b></span><br>
-		<span>사는 곳 : <b>인천</b></span><br>
-		<span>좋아하는 것 : <b>집</b></span><br>
-		<p></p>
-		<hr>
-		<p></p>
-		<span>현재 공부하는 것 : <b>HTML</b></span><br>
-		<span>지금 어려운 부분 : <b>공부 시작하기</b></span><br>
-		<span>수료 후 희망진로 : <b>개발</b></span><br>
-		<span>지원동기 : <b>웹개발을 안해봐서</b></span><br>
-	</center>
+	<div style="display: inline-block; width: 800px;">
+		<header style="height: 200px; overflow: hidden;">
+				<img src="../image/img/jennie02.jpg" style="display: inline-block; position: relative; top: -13px; width: 100%; height: auto;">
+		</header>
+		<nav style="font-size: 0pt;">
+			<button type="button" id="btn1" class="btn">기본정보</button>
+			<button type="button" id="btn2" class="btn">좋아하는 것</button>
+			<button type="button" id="btn3" class="btn">공부하는 것</button>
+			<button type="button" id="btn4" class="btn">어려운부분</button>
+			<button type="button" id="btn5" class="btn">희망진로</button>
+			<button type="button" id="btn6" class="btn">지원동기</button>
+		</nav>
+		<section style="display: inline-block; width: 100%; height: 600px;"><!--
+		 --><article  class="article"
+		 		style="display: inline-block; float: right; width: 600px; height: 600px; font-size: 20pt; font-weight: bold;" 
+		 		id="article">
+		 		<h1 style="color: salmon">자기소개 페이지</h1>
+			</article><!-- 
+		 --><article  class="article"
+		 		style="display: none; float: right; width: 600px; height: 600px; font-size: 14pt;" 
+		 		id="article1">
+		 			<div>
+			 			<span style="display: inline-block; width: 200px; text-align: right;">
+			 				이&nbsp;&nbsp;&nbsp;름 : 
+			 			</span>
+			 			<h3 style="display: inline-block; width: 390px;">
+			 				안 은 비
+			 			</h3>
+			 			<hr style="width: 450px">
+		 			</div>
+		 			<div>
+			 			<span style="display: inline-block; width: 200px; text-align: right;">
+			 				출생년 : 
+			 			</span>
+			 			<h3 style="display: inline-block; width: 390px;">
+			 				1998년
+			 			</h3>
+			 			<hr style="width: 450px">
+		 			</div>
+		 			<div>
+			 			<span style="display: inline-block; width: 200px; text-align: right;">
+			 				혈액형 : 
+			 			</span>
+			 			<h3 style="display: inline-block; width: 390px;">
+			 				B 형
+			 			</h3>
+			 			<hr style="width: 450px">
+		 			</div>
+		 			<div>
+			 			<span style="display: inline-block; width: 200px; text-align: right;">
+			 				성&nbsp;&nbsp;&nbsp;별 : 
+			 			</span>
+			 			<h3 style="display: inline-block; width: 390px;">
+			 				여 자
+			 			</h3>
+			 			<hr style="width: 450px">
+		 			</div>
+		 			<div>
+			 			<span style="display: inline-block; width: 200px; text-align: right;">
+			 				고&nbsp;&nbsp;&nbsp;향 : 
+			 			</span>
+			 			<h3 style="display: inline-block; width: 390px;">
+			 				인 천
+			 			</h3>
+			 			<hr style="width: 450px">
+		 			</div>
+		 			<div>
+			 			<span style="display: inline-block; width: 200px; text-align: right;">
+			 				사는곳 : 
+			 			</span>
+			 			<h3 style="display: inline-block; width: 390px;">
+			 				인 천
+			 			</h3>
+		 			</div>
+			</article><!-- 
+		 --><article  class="article"
+		 		style="display: none; float: right; overflow: hidden; width: 600px; height: 600px; font-size: 14pt; font-weight: bold;" 
+		 		id="article2">
+		 		<h2>집, 침대!!!</h2>
+		 		<div style="overflow: hidden;">
+			 		<img src="/black/image/img/home.png" style="position: relative; top: 0px; width: 100%; height: auto;">
+		 		</div>
+			</article><!-- 
+		 --><article  class="article"
+		 		style="display: none; float: right; width: 600px; height: 600px; font-size: 14pt; font-weight: bold;" 
+		 		id="article3">
+		 		<h2>HTML5</h2>
+		 		<div style="display: inline-block; width: 250px; height: 250px; overflow: hidden; ">
+			 		<img src="/black/image/img/html5.png" width="100%" height="auto">
+		 		</div>
+			</article><!-- 
+		 --><article  class="article"
+		 		style="display: none; float: right; width: 600px; height: 600px; font-size: 14pt; font-weight: bold;" 
+		 		id="article4">
+		 		<h3 style="color: red;">공부 시작하기</h3>
+				<h2 style="color: red;">객체지향</h2>
+				<h2 style="color: red;">JDBC 완전 어려움!!</h2>
+			</article><!-- 
+		 --><article  class="article"
+		 		style="display: none; float: right; width: 600px; height: 600px; font-size: 14pt; font-weight: bold;" 
+		 		id="article5">
+		 		<h1 style="font-size: 24pt; font-weight: bold;"><span style="color: #ff0066;">개발자 취업하기 !</span></h1>
+			</article><!-- 
+		 --><article class="article"
+		 		style="display: none; float: right; width: 600px; height: 600px; font-size: 21pt; font-weight: bold;" 
+		 		id="article6">
+		 		<h1 style="color: coral;">배워보고 싶어서!</h1>
+			</article><!-- 
+		 --><aside style="display: inline-block; width: 200px; height: 600px; overflow: hidden;">
+				<img src="../image/img/jennie.jpg" style="position: relative; right: 100px; width: auto; height: 100%;">
+			</aside>
+		</section>
+		<footer style="background-color: pink; height: 50px;">
+			<p style="margin: 0px; position: relative; top: 15px; font-size: 10pt; font-weight: bold;">이 문서내 사진의 소유권은 찍은 사람에게 있습니다.</p>
+		</footer>
+	</div>
+<script type="text/javascript">
+	document.getElementById('btn1').onclick = function(){
+		
+		var el = document.getElementsByClassName('article');
+		
+		for(var i = 0 ; i < el.length ; i++ ){
+			el[i].style.display = 'none';
+		}
+		
+		document.getElementById('article1').style.display = 'inline-block';
+	};
+	document.getElementById('btn2').onclick = function(){
+		
+		var el = document.getElementsByClassName('article');
+		
+		for(var i = 0 ; i < el.length ; i++ ){
+			el[i].style.display = 'none';
+		}
+		
+		document.getElementById('article2').style.display = 'inline-block';
+	};
+	document.getElementById('btn3').onclick = function(){
+		
+		var el = document.getElementsByClassName('article');
+		
+		for(var i = 0 ; i < el.length ; i++ ){
+			el[i].style.display = 'none';
+		}
+		
+		document.getElementById('article3').style.display = 'inline-block';
+	};
+	document.getElementById('btn4').onclick = function(){
+
+		var el = document.getElementsByClassName('article');
+		
+		for(var i = 0 ; i < el.length ; i++ ){
+			el[i].style.display = 'none';
+		}
+		
+		document.getElementById('article4').style.display = 'inline-block';
+	};
+	document.getElementById('btn5').onclick = function(){
+
+		var el = document.getElementsByClassName('article');
+		
+		for(var i = 0 ; i < el.length ; i++ ){
+			el[i].style.display = 'none';
+		}
+		
+		document.getElementById('article5').style.display = 'inline-block';
+	};
+	document.getElementById('btn6').onclick = function(){
+
+		var el = document.getElementsByClassName('article');
+		
+		for(var i = 0 ; i < el.length ; i++ ){
+			el[i].style.display = 'none';
+		}
+		
+		document.getElementById('article6').style.display = 'inline-block';
+	};
+</script>	
 </body>
 </html>
