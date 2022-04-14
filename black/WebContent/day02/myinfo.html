@@ -6,9 +6,9 @@
 <style>
 	.btn {
 		/* display: inline-block; */
-		width: 16.66%;
+		width: 16.3%;
 		border: none;
-		font-size: 12pt;
+		font-size: 11pt;
 		cursor: pointer;
 	}
 	.btn:hover {
@@ -16,6 +16,7 @@
 		color: white;
 	}
 </style>
+<base href="http://localhost/black/day02/myinfo.html">
 </head>
 <body style="text-align: center;">
 <!-- 
@@ -27,11 +28,13 @@
 	사용태그)
 		h1 ~ h6, a, span, p, pre, br, hr, img
 -->
-	<div style="display: inline-block; width: 800px;">
+	<div style="display: inline-block; width: 800px; font-size: 0pt;">
 		<header style="height: 200px; overflow: hidden;">
+			<a href="">
 				<img src="../image/img/jennie02.jpg" style="display: inline-block; position: relative; top: -13px; width: 100%; height: auto;">
+			</a>
 		</header>
-		<nav style="font-size: 0pt;">
+		<nav style="font-size: 1pt;">
 			<button type="button" id="btn1" class="btn">기본정보</button>
 			<button type="button" id="btn2" class="btn">좋아하는 것</button>
 			<button type="button" id="btn3" class="btn">공부하는 것</button>
@@ -101,6 +104,9 @@
 			 				인 천
 			 			</h3>
 		 			</div>
+		 			<a style="float: right; position: relative; right: 50px;" href="">
+						<img src="/black/image/img/back.png" width="50px" height="auto" alt="Back" title="뒤로가기">
+					</a>
 			</article><!-- 
 		 --><article  class="article"
 		 		style="display: none; float: right; overflow: hidden; width: 600px; height: 600px; font-size: 14pt; font-weight: bold;" 
@@ -109,6 +115,9 @@
 		 		<div style="overflow: hidden;">
 			 		<img src="/black/image/img/home.png" style="position: relative; top: 0px; width: 100%; height: auto;">
 		 		</div>
+		 		<a style="float: right; position: relative; right: 50px;" href="">
+					<img src="/black/image/img/back.png" width="50px" height="auto" alt="Back" title="뒤로가기">
+				</a>
 			</article><!-- 
 		 --><article  class="article"
 		 		style="display: none; float: right; width: 600px; height: 600px; font-size: 14pt; font-weight: bold;" 
@@ -116,7 +125,10 @@
 		 		<h2>HTML5</h2>
 		 		<div style="display: inline-block; width: 250px; height: 250px; overflow: hidden; ">
 			 		<img src="/black/image/img/html5.png" width="100%" height="auto">
-		 		</div>
+		 		</div><br>
+		 		<a style="float: right; position: relative; right: 50px;" href="">
+					<img src="/black/image/img/back.png" width="50px" height="auto" alt="Back" title="뒤로가기">
+				</a>
 			</article><!-- 
 		 --><article  class="article"
 		 		style="display: none; float: right; width: 600px; height: 600px; font-size: 14pt; font-weight: bold;" 
@@ -124,23 +136,32 @@
 		 		<h3 style="color: red;">공부 시작하기</h3>
 				<h2 style="color: red;">객체지향</h2>
 				<h2 style="color: red;">JDBC 완전 어려움!!</h2>
+				<a style="float: right; position: relative; right: 50px;" href="">
+					<img src="/black/image/img/back.png" width="50px" height="auto" alt="Back" title="뒤로가기">
+				</a>
 			</article><!-- 
 		 --><article  class="article"
 		 		style="display: none; float: right; width: 600px; height: 600px; font-size: 14pt; font-weight: bold;" 
 		 		id="article5">
 		 		<h1 style="font-size: 24pt; font-weight: bold;"><span style="color: #ff0066;">개발자 취업하기 !</span></h1>
+		 		<a style="float: right; position: relative; right: 50px;" href="">
+					<img src="/black/image/img/back.png" width="50px" height="auto" alt="Back" title="뒤로가기">
+				</a>
 			</article><!-- 
 		 --><article class="article"
 		 		style="display: none; float: right; width: 600px; height: 600px; font-size: 21pt; font-weight: bold;" 
 		 		id="article6">
-		 		<h1 style="color: coral;">배워보고 싶어서!</h1>
+		 		<h1 style="color: coral;">배워본 적이 없어서 !</h1>
+		 		<a style="float: right; position: relative; right: 50px;" href="">
+					<img src="/black/image/img/back.png" width="50px" height="auto" alt="Back" title="뒤로가기">
+				</a>
 			</article><!-- 
 		 --><aside style="display: inline-block; width: 200px; height: 600px; overflow: hidden;">
 				<img src="../image/img/jennie.jpg" style="position: relative; right: 100px; width: auto; height: 100%;">
-			</aside>
-		</section>
-		<footer style="background-color: pink; height: 50px;">
-			<p style="margin: 0px; position: relative; top: 15px; font-size: 10pt; font-weight: bold;">이 문서내 사진의 소유권은 찍은 사람에게 있습니다.</p>
+			</aside><!--
+	 --></section><!--
+	 --><footer style="background-color: pink; height: 50px;">
+			<p style="margin: 0px; position: relative; top: 15px; font-size: 10pt; font-weight: bold;">이 문서 내 사진의 소유권은 찍은 사람에게 있습니다.</p>
 		</footer>
 	</div>
 <script type="text/javascript">
