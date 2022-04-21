@@ -1,0 +1,117 @@
+.content {
+	text-align: center;
+}
+.box60 {
+	display: inline-block;
+	width: 600px;
+}
+.box {
+	padding: 20px;
+	border: 1px solid gray;
+}
+.box > div {
+	margin-top: 10px;
+}
+h1 {
+	background-color: #e91e63;
+	color: white;
+	padding: 10px;
+}
+form {
+	text-align: left;
+}
+div > label {
+	display:inline-block;
+	width: 25%;
+	text-align: right;
+	color: gray;
+}
+.box > div > input {
+	display: inline-block;
+	width: 60%;
+	margin-left:5px;
+	padding: 7px;
+}
+.gen{
+	display: inline-block;
+	width: 65%;
+	padding: 5px;
+	text-align: left;
+}
+.gen > span {
+	margin-left: 70px;
+}
+.avt {
+	display: inline-block;
+	width: 65%;
+	margin-left: 5px;
+	padding: 5px;
+	text-align: center;
+}
+.avt > p {
+	display:block;
+}
+.avt > div {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+}
+.avtimg{
+	display: inline-block;
+	width: 100px;
+	height: auto;
+}
+.btncontent {
+	text-align: center;
+	margin-top: 30px;
+}
+#idckbtn {
+	display: inline-block;
+	width: 70px;
+	height: 30px;
+	margin-left:5px;
+	background-color: #2196f3;
+	border: 2px solid skyblue;
+	color: white;
+}
+#idckbtn:hover {
+	background-color: gray;
+	cursor: pointer;
+}
+#rbtn {
+	background-color: #ff5722;
+	border: 0px;
+	color: white;
+	width: 200px;
+	height: 35px;
+}
+#rbtn:hover {
+	background-color: #ff8862;
+	border: 2px solid #ff5722;
+	cursor: pointer;
+}
+#hbtn {
+	background-color: #4caf50;
+	border: 0px;
+	color: white;
+	width: 200px;
+	height: 35px;
+	cursor: pointer;
+}
+#hbtn:hover {
+	background-color: #82cc85;
+	border: 2px solid #4caf50;
+	cursor: pointer;
+}
+#jbtn {
+	background-color: #2196f3;
+	border: 0px;
+	color: white;
+	width: 200px;
+	height: 35px;
+	cursor: pointer;
+}#jbtn:hover {
+	background-color: #82c1f3;
+	border: 2px solid #2196f3;
+	cursor: pointer;
+}

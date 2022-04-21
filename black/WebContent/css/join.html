@@ -3,128 +3,84 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<style>
-	#idckbtn {
-		background-color: #2196f3;
-		border: 2px solid skyblue;
-		color: white;
-	}
-	#idckbtn:hover {
-		background-color: gray;
-		cursor: pointer;
-	}
-	#rbtn {
-		background-color: #ff5722;
-		border: 0px;
-		color: white;
-	}
-	#hbtn {
-		background-color: #4caf50;
-		border: 0px;
-		color: white;
-	}
-	#jbtn {
-		background-color: #2196f3;
-		border: 0px;
-		color: white;
-	}
-</style>
+<link rel="stylesheet" type="text/css" href="/black/resources/css/join.css">
 </head>
 <body>
-	<div style="text-align: center;">
-		<div style="display: inline-block; width: 600px;">
-			<h1 style="background-color: #e91e63; color: white; padding: 10px;">Black 회원가입</h1>
-			<form method="GET" action="test01.html"
-					style="text-align: left;" name="frm" id="frm">
-				<div style="padding: 20px; border: 1px solid gray;">
-					<div style="margin-bottom: 10px;">
-						<label for="name"
-								style="display:inline-block; width: 25%; text-align: right; color: gray;"><b>회원이름 : </b></label>
-						<input type="text" name="name" id="name"
-								style="display: inline-block; width: 60%; margin-left:5px; padding: 7px;">
+	<div class="content">
+		<div class="box60">
+			<h1>Black 회원가입</h1>
+			<form method="GET" action="test01.html" name="frm" id="frm">
+				<div class="box">
+					<div>
+						<label for="name"><b>회원이름 : </b></label>
+						<input type="text" name="name" id="name">
 					</div>
-					<div style="margin-bottom: 10px;">
-						<label for="id"
-								style="display:inline-block; width: 25%; text-align: right; color: gray;"><b>아이디 : </b></label>
-						<input type="text" name="user" id="id"
-								style="display: inline-block; width: 45%; margin-left:5px; padding: 7px;">
-						<button type="button" id="idckbtn" onclick="alert('* 사용가능한 아이디입니다.')"
-								style="display: inline-block; width: 70px; height: 30px; margin-left:5px;">id check</button>
+					<div>
+						<label for="id"><b>아이디 : </b></label>
+						<input type="text" name="user" id="id" style="width: 45%">
+						<button type="button" id="idckbtn" onclick="alert('* 사용가능한 아이디입니다.')">id check</button>
 					</div>
-					<div style="margin-bottom: 10px;">
-						<label for="pw"
-								style="display:inline-block; width: 25%; text-align: right; color: gray;"><b>비밀번호 : </b></label>
-						<input type="password" name="pw" id="password"
-								style="display: inline-block; width: 60%; margin-left:5px; padding: 7px;">
+					<div>
+						<label for="pw"><b>비밀번호 : </b></label>
+						<input type="password" name="pw" id="password">
 					</div>
-					<div style="margin-bottom: 10px;">
-						<label for="pw2"
-								style="display:inline-block; width: 25%; text-align: right; color: gray;"><b>pw check : </b></label>
-						<input type="password" name="pw2" id="password2"
-								style="display: inline-block; width: 60%; margin-left:5px; padding: 7px;">
+					<div>
+						<label for="pw2"><b>pw check : </b></label>
+						<input type="password" name="pw2" id="password2">
 					</div>
-					<div style="margin-bottom: 10px;">
-						<label for="mail"
-								style="display:inline-block; width: 25%; text-align: right; color: gray;"><b>회원메일 : </b></label>
-						<input type="text" name="mail" id="mail"
-								style="display: inline-block; width: 60%; margin-left:5px; padding: 7px;">
+					<div>
+						<label for="mail"><b>회원메일 : </b></label>
+						<input type="text" name="mail" id="mail">
 					</div>
-					<div style="margin-bottom: 10px;">
-						<label for="tel"
-								style="display:inline-block; width: 25%; text-align: right; color: gray;"><b>전화번호 : </b></label>
-						<input type="text" name="tel" id="tel"
-								style="display: inline-block; width: 60%; margin-left:5px; padding: 7px;">
+					<div>
+						<label for="tel"><b>전화번호 : </b></label>
+						<input type="text" name="tel" id="tel">
 					</div>
-					<div style="margin-bottom: 10px;">
-						<label for="gen"
-								style="display: inline-block; width: 25%; text-align: right; color: gray;"><b>회원성별 : </b></label>
-						<div style="display: inline-block; width: 65%; margin-left: 5px; padding: 5px; text-align: center;">
+					<div>
+						<label for="gen"><b>회원성별 : </b></label>
+						<div class="gen">
 							<span>남자 </span><input type="radio" name="gen" id="mgen" value="M">
-							<p style="display: inline-block; width: 100px;"></p>
+							
 							<span>여자 </span><input type="radio" name="gen" id="fgen" value="F">
 						</div>
 					</div>
-					<div style="margin-bottom: 10px;">
-						<label for="avt"
-								style="display: inline-block; width: 25%; text-align: right; color: gray; position: relative; bottom: 263px;">
+					<div>
+						<label for="avt" style="position: relative; bottom: 263px;">
 								<b>아바타 : </b></label>
-						<div style="display: inline-block; width: 65%; margin-left: 5px; padding: 5px; text-align: center;">
-							<p style="display:block;"></p>
-							<div style="display: inline-block; width: 100px; height: 100px;">
-								<img src="../image/avatar/img_avatar1.png" style="display: inline-block; width: 100px; height: auto;">
+						<div class="avt">
+							<p></p>
+							<div>
+								<img src="../image/avatar/img_avatar1.png" class="avtimg">
 								<input type="radio" name="avt" id="avt1" value="1">
 							</div>
-							<div style="display: inline-block; width: 100px; height: 100px;">
-								<img src="../image/avatar/img_avatar2.png" style="display: inline-block; width: 100px; height: auto;">
+							<div>
+								<img src="../image/avatar/img_avatar2.png" class="avtimg">
 								<input type="radio" name="avt" id="avt2" value="2">
 							</div>
-							<div style="display: inline-block; width: 100px; height: 100px;">
-								<img src="../image/avatar/img_avatar3.png" style="display: inline-block; width: 100px; height: auto;">
+							<div>
+								<img src="../image/avatar/img_avatar3.png" class="avtimg">
 								<input type="radio" name="avt" id="avt3" value="3">
 							</div>
-							<p style="display:block;"></p>
-							<div style="display: inline-block; width: 100px; height: 100px;">
-								<img src="../image/avatar/img_avatar4.png" style="display: inline-block; width: 100px; height: auto;">
+							<p></p>
+							<div>
+								<img src="../image/avatar/img_avatar4.png" class="avtimg">
 								<input type="radio" name="avt" id="avt4" value="4" >
 							</div>
-							<div style="display: inline-block; width: 100px; height: 100px;">
-								<img src="../image/avatar/img_avatar5.png" style="display: inline-block; width: 100px; height: auto;">
+							<div>
+								<img src="../image/avatar/img_avatar5.png" class="avtimg">
 								<input type="radio" name="avt" id="avt5" value="5">
 							</div>
-							<div style="display: inline-block; width: 100px; height: 100px;">
-								<img src="../image/avatar/img_avatar6.png" style="display: inline-block; width: 100px; height: auto;">
+							<div>
+								<img src="../image/avatar/img_avatar6.png" class="avtimg">
 								<input type="radio" name="avt" id="avt6" value="6">
 							</div>
 						</div>
 					</div>
 				</div>
-				<div style="text-align: center; margin-top: 30px;">
-					<input type="reset" id="rbtn"
-							style="display: inline-block; width: 200px; height: 35px; cursor: pointer;" value="reset"><!-- 
-				 --><button type="button" id="hbtn" onclick="location.href='../index.html';"
-							style="display: inline-block; width: 200px; height: 35px; cursor: pointer;">home</button><!-- 
-				 --><button type="submit" id="jbtn"
-							style="display: inline-block; width: 200px; height: 35px; cursor: pointer;">join</button>
+				<div class="btncontent">
+					<input type="reset" id="rbtn" value="reset"><!-- 
+				 --><button type="button" id="hbtn" onclick="location.href='../index.html';">home</button><!-- 
+				 --><button type="submit" id="jbtn">join</button>
 				</div>
 			</form>
 		</div>
