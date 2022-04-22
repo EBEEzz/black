@@ -1,0 +1,86 @@
+.content {
+	text-align: center;
+}
+.box60 {
+	display: inline-block;
+	width: 600px;
+}
+.box {
+	padding: 20px;
+	border: 1px solid gray;
+}
+
+h1 {
+	background-color: #e91e63;
+	color: white;
+	padding: 10px;
+}
+form {
+	text-align: left;
+}
+nav {
+	display: inline-block;
+	width: 40%;
+	text-align: center;
+}
+.avtimg {
+	display: inline-block;
+	width: 120px;
+	height: auto;
+	position: relative;
+	bottom: 55px;
+}
+article {
+	display: inline-block;
+	width: 50%;
+}
+label {
+	display:inline-block;
+	text-align: left;
+	color: gray;
+	padding: 7px;
+}
+.btncontent {
+	text-align: center;
+	margin-top: 20px;
+}
+#hbtn {
+	background-color: #ff5722;
+	border: 0px;
+	color: white;
+	width: 200px;
+	height: 35px;
+}
+#hbtn:hover {
+	background-color: #ff8862;
+	border: 2px solid #ff5722;
+	cursor: pointer;
+}
+#lbtn {
+	background-color: #4caf50;
+	border: 0px;
+	color: white;
+	width: 200px;
+	height: 35px;
+	cursor: pointer;
+}
+#lbtn:hover {
+	background-color: #82cc85;
+	border: 2px solid #4caf50;
+	cursor: pointer;
+}
+#ebtn {
+	background-color: #2196f3;
+	border: 0px;
+	color: white;
+	width: 200px;
+	height: 35px;
+	cursor: pointer;
+}#ebtn:hover {
+	background-color: #82c1f3;
+	border: 2px solid #2196f3;
+	cursor: pointer;
+}
+.sh {
+	box-shadow: 5px 5px 10px 1px #c0c0c0;
+}

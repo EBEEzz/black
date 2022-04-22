@@ -32,84 +32,27 @@ div > label {
 	margin-left:5px;
 	padding: 7px;
 }
-.gen{
-	display: inline-block;
-	width: 65%;
-	padding: 5px;
-	text-align: left;
+#password {
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
-.gen > span {
-	margin-left: 70px;
-}
-.male {
-	display: inline-block;
-	width: 65%;
-	margin-left: 5px;
-	padding: 5px;
-	text-align: center;
-}
-.female {
-	display: inline-block;
-	width: 65%;
-	margin-left: 5px;
-	padding: 5px;
-	text-align: center;
-	position: relative;
-	left: 145px;
-}
-.male > p {
-	display:block;
-}
-.female > p {
-	display:block;
-}
-.male > div {
-	display: inline-block;
-	width: 100px!important;
-	height: 100px;
-}
-.female > div {
-	display: inline-block;
-	width: 100px;
-	height: 100px;
-}
-.avtimg {
-	display: inline-block;
-	width: 100px;
-	height: auto;
-}
-
 .btncontent {
-	text-align: center;
+	text-align: right;
 	margin-top: 20px;
-	margin-bottom: 20px;
 }
-#idckbtn {
-	display: inline-block;
-	width: 70px;
-	height: 30px;
-	margin-left:5px;
-	background-color: #2196f3;
-	border: 2px solid skyblue;
-	color: white;
-}
-#idckbtn:hover {
-	background-color: gray;
-	cursor: pointer;
-}
-#rbtn {
+#jbtn {
 	background-color: #ff5722;
 	border: 0px;
 	color: white;
 	width: 200px;
 	height: 35px;
 }
-#rbtn:hover {
+#jbtn:hover {
 	background-color: #ff8862;
 	border: 2px solid #ff5722;
 	cursor: pointer;
 }
-#hbtn {
+#sbtn {
 	background-color: #4caf50;
 	border: 0px;
 	color: white;
@@ -117,19 +60,20 @@ div > label {
 	height: 35px;
 	cursor: pointer;
 }
-#hbtn:hover {
+#sbtn:hover {
 	background-color: #82cc85;
 	border: 2px solid #4caf50;
 	cursor: pointer;
 }
-#jbtn {
+#linbtn {
 	background-color: #2196f3;
 	border: 0px;
 	color: white;
 	width: 200px;
 	height: 35px;
 	cursor: pointer;
-}#jbtn:hover {
+}
+#linbtn:hover {
 	background-color: #82c1f3;
 	border: 2px solid #2196f3;
 	cursor: pointer;
