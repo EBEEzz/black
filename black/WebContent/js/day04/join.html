@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Join Page</title>
+<link rel="stylesheet" type="text/css" href="/black/resources/css/join.css">
+</head>
+<body>
+	<div class="content">
+		<div class="box60">
+			<h1 class="sh">Black 회원가입</h1>
+			<form method="GET" action="info.html" name="frm" id="frm">
+				<div class="box sh">
+					<div>
+						<label for="name"><b>회원이름 : </b></label>
+						<input type="text" name="name" id="name">
+					</div>
+					<div>
+						<label for="id"><b>아이디 : </b></label>
+						<input type="text" name="user" id="id" style="width: 45%">
+						<button type="button" id="idckbtn" onclick="alert('* 사용가능한 아이디입니다.')">id check</button>
+					</div>
+					<div>
+						<label for="pw"><b>비밀번호 : </b></label>
+						<input type="password" name="pw" id="password">
+					</div>
+					<div>
+						<label for="pw2"><b>pw check : </b></label>
+						<input type="password" name="pw2" id="password2">
+					</div>
+					<div>
+						<label for="mail"><b>회원메일 : </b></label>
+						<input type="text" name="mail" id="mail">
+					</div>
+					<div>
+						<label for="tel"><b>전화번호 : </b></label>
+						<input type="text" name="tel" id="tel">
+					</div>
+					<div>
+						<label for="gen"><b>회원성별 : </b></label>
+						<div class="gen">
+							<span>남자 </span><input type="radio" name="gen" id="mgen" value="M">
+							
+							<span>여자 </span><input type="radio" name="gen" id="fgen" value="F">
+						</div>
+					</div>
+					<div>
+						<label for="avt" style="position: relative; bottom: 120px;">
+								<b>아바타 : </b></label>
+						<div class="male">	
+							<p></p>
+							<div>
+								<img src="/black/image/avatar/img_avatar1.png" class="avtimg">
+								<input type="radio" name="avt" id="avt1" value="1">
+							</div>
+							<div>
+								<img src="/black/image/avatar/img_avatar2.png" class="avtimg">
+								<input type="radio" name="avt" id="avt2" value="2">
+							</div>
+							<div>
+								<img src="/black/image/avatar/img_avatar3.png" class="avtimg">
+								<input type="radio" name="avt" id="avt3" value="3">
+							</div>
+						</div>
+						<div class="female">
+							<p></p>
+							<div>
+								<img src="/black/image/avatar/img_avatar4.png" class="avtimg">
+								<input type="radio" name="avt" id="avt4" value="4" >
+							</div>
+							<div>
+								<img src="/black/image/avatar/img_avatar5.png" class="avtimg">
+								<input type="radio" name="avt" id="avt5" value="5">
+							</div>
+							<div>
+								<img src="/black/image/avatar/img_avatar6.png" class="avtimg">
+								<input type="radio" name="avt" id="avt6" value="6">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="btncontent sh">
+					<button type="button" id="rbtn">return</button><!-- 
+				 --><button type="button" id="hbtn">home</button><!-- 
+				 --><button type="button" id="jbtn">join</button>
+				</div>
+			</form>
+		</div>
+	</div>
+<script type="text/javascript" src="/black/resources/js/day04/join.js"></script>
+</body>
+</html>
