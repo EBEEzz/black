@@ -1,46 +1,74 @@
-// join 버튼 클릭이벤트
-document.getElementById('jbtn').onclick = function(){
-	// 데이터 입력체크
-	/*var sname = document.getElementById('name').value;
-	if(!sname){
-		document.getElementById('name').focus();
-		return;
-	}
-	var sid = document.getElementById('id').value;
-	if(!sid){
-		document.getElementById('id').focus();
-		return;
-	}
-	var spw = document.getElementById('pw').value;
-	if(!spw){
-		document.getElementById('pw').focus();
-		return;
-	}
-	*/
-	
-	var el = document.getElementsByClassName('ck');
-	for(var i = 0 ; i < el.length ; i++ ){
-		var tmp = el[i].value;
-		if(!tmp){
-			el[i].focus();
-			return;
+$(document).ready(function(){
+	$('#ckmsg').css('display', 'none');
+	$('#repw').keyup(function(){
+		var pw = $('#password').val();
+		var repw = $('#repw').val();
+		
+		if(pw == repw){
+			$('#repw').removeAttr('name');
+			$('#ckmsg').html('*** 비밀번호가 일치합니다. ***').css('color', 'blue');
+			$('#ckmsg').css('display', 'block');
+		} else {
+			$('#ckmsg').html('*** 비밀번호가 다릅니다. ***').css('color', 'red');
+			$('#ckmsg').css('display', 'block');
 		}
+	});
+});
+
+document.getElementById('idckbtn').onclick = function() {
+	var sid = document.getElementById('id').value;
+	var idPat = /^[a-zA-Z0-9]{4,10}$/;
+	var idResult = idPat.test(sid);
+	
+	if(idResult) {
+		$('#idck').html('*** 사용가능한 아이디입니다. ***').css('color', 'blue');
+		$('#idck').css('display', 'block');
+	} else {
+		$('#idck').html('*** 사용할 수 없는 아이디입니다. ***').css('color', 'red');
+		$('#idck').css('display', 'block');
 	}
-	
-	
-	// 정규 표현식 검사
-	
-	// 제출...
-	
-	
 };
 
-// reset 버튼 이벤트 처리
-document.getElementById('rbtn').onclick = function(){
-	document.getElementById('frm').reset();
-	/*
-	var sid = document.frm.id.value;
-	alert(sid);
-	document.frm.reset();
-	*/
+// join
+document.getElementById('jbtn').onclick = function(){
+	var sid = document.getElementById('id').value;
+	var spw = document.getElementById('password').value;	
+	var smail = document.getElementById('mail').value;
+	var stel = document.getElementById('tel').value;
+
+	var idPat = /^[a-zA-Z0-9]{4,10}$/;
+	var pwPat = /^[a-zA-Z0-9]{4,10}$/;
+	var mailPat = /^[a-zA-Z0-9]{4,10}$/;
+	var telPat = /^[0-9]{11,11}$/;
+
+	var idResult = idPat.test(sid);
+	var pwResult = pwPat.test(spw);
+	var mailResult = mailPat.test(smail);
+	var telResult = telPat.test(stel);
+	
+	if(idResult && pwResult && mailResult && telResult) {
+		document.getElementById('fid').value = sid;
+		document.getElementById('fpw').value = spw;
+		
+		document.getElementById('frm').submit();
+	} else {
+		document.getElementById('id').value = '';
+		document.getElementById('password').value = '';
+		document.getElementById('repw').value = '';
+		document.getElementById('mail').value = '';
+		document.getElementById('tel').value = '';
+		document.getElementById('id').focus();
+	}
 };
+
+// reset
+document.getElementById('rbtn').onclick = function(){
+	document.getElementById('name').value = '';
+	document.getElementById('id').value = '';
+	document.getElementById('password').value = '';
+	document.getElementById('repw').value = '';
+	document.getElementById('mail').value = '';
+	document.getElementById('tel').value = '';
+	document.getElementById('mgen').reset;
+};
+

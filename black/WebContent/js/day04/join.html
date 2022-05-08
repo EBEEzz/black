@@ -4,37 +4,43 @@
 <meta charset="UTF-8">
 <title>Join Page</title>
 <link rel="stylesheet" type="text/css" href="/black/resources/css/join.css">
+<script type="text/javascript" src="/black/resources/js/jquery-3.6.0.min.js"></script>
+<style type="text/css">
+</style>
 </head>
 <body>
+	<form method="POST" action="joinProc.html" id="frm" name="frm">
+		<input type="hidden" id="fid" name="id">
+		<input type="hidden" id="fpw" name="pw">
+	</form>
 	<div class="content">
 		<div class="box60">
 			<h1 class="sh">Black 회원가입</h1>
-			<form method="GET" action="info.html" name="frm" id="frm">
 				<div class="box sh">
 					<div>
 						<label for="name"><b>회원이름 : </b></label>
-						<input type="text" name="name" id="name">
+						<input type="text" name="name" id="name" class="ck">
 					</div>
 					<div>
 						<label for="id"><b>아이디 : </b></label>
-						<input type="text" name="user" id="id" style="width: 45%">
-						<button type="button" id="idckbtn" onclick="alert('* 사용가능한 아이디입니다.')">id check</button>
+						<input type="text" name="id" id="id" style="width: 45%" class="ck">
+						<button type="button" id="idckbtn">id check</button>
+						<p id="idck"></p>
 					</div>
 					<div>
 						<label for="pw"><b>비밀번호 : </b></label>
-						<input type="password" name="pw" id="password">
-					</div>
-					<div>
-						<label for="pw2"><b>pw check : </b></label>
-						<input type="password" name="pw2" id="password2">
+						<input type="password" name="pw" id="password" class="ck">
+						<label for="repw" style="margin-top: 15px;"><b>pw check : </b></label>
+						<input type="password" name="repw" id="repw" class="ck">
+						<p id="ckmsg"></p>
 					</div>
 					<div>
 						<label for="mail"><b>회원메일 : </b></label>
-						<input type="text" name="mail" id="mail">
+						<input type="text" name="mail" id="mail" class="ck">
 					</div>
 					<div>
 						<label for="tel"><b>전화번호 : </b></label>
-						<input type="text" name="tel" id="tel">
+						<input type="text" name="tel" id="tel" class="ck">
 					</div>
 					<div>
 						<label for="gen"><b>회원성별 : </b></label>
@@ -79,7 +85,6 @@
 						</div>
 					</div>
 				</div>
-			</form>
 			<div class="btncontent sh">
 				<button type="button" id="rbtn">return</button><!-- 
 			 --><button type="button" id="hbtn">home</button><!-- 
@@ -87,6 +92,7 @@
 			</div>
 		</div>
 	</div>
-<script type="text/javascript" src="/black/resources/js/day04/join.js"></script>
+<script type="text/javascript" src="/black/resources/js/day04/join.js">
+</script>
 </body>
 </html>
