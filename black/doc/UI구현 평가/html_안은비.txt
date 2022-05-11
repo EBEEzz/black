@@ -16,7 +16,6 @@
 	<div class="content">
 		<div class="box60">
 			<h1 class="sh">Black 회원가입</h1>
-			<form name="form1">
 				<div class="box sh">
 					<div>
 						<label for="name"><b>회원이름 : </b></label>
@@ -51,7 +50,7 @@
 							<span>여자 </span><input type="radio" name="gen" id="fgen" value="F">
 						</div>
 					</div>
-					<div class="avatar">
+					<div>
 						<label for="avt" style="position: relative; bottom: 120px;">
 								<b>아바타 : </b></label>
 						<div class="male">	
@@ -86,7 +85,6 @@
 						</div>
 					</div>
 				</div>
-			</form>
 			<div class="btncontent sh">
 				<button type="button" id="rbtn">return</button><!-- 
 			 --><button type="button" id="hbtn">home</button><!-- 

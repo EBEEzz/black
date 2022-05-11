@@ -16,7 +16,7 @@ $(document).ready(function(){
 });
 
 $('#idckbtn').click(function() {
-	var sid = $('#id').val();
+	var sid = document.getElementById('id').value;
 	var idPat = /^[\w]{4,10}$/;
 	var idResult = idPat.test(sid);
 	
@@ -29,18 +29,6 @@ $('#idckbtn').click(function() {
 	}
 });
 
-$('#mgen').click(function(){
-	$('.avatar').css('display', 'block');
-	$('.male').css('display', 'inline-block');
-	$('.female').css('display', 'none');
-});
-
-$('#fgen').click(function(){
-	$('.avatar').css('display', 'block');
-	$('.male').css('display', 'none');
-	$('.female').css('display', 'inline-block');
-});
-
 $('#hbtn').click(function() {
 	location.href = '/black/';
 });
@@ -48,8 +36,7 @@ $('#hbtn').click(function() {
 // join
 $('#jbtn').click(function(){
 	var sid = document.getElementById('id').value;
-	var spw = document.getElementById('password').value;
-	var srepw = document.getElementById('repw').value;
+	var spw = document.getElementById('password').value;	
 	var smail = document.getElementById('mail').value;
 	var stel = document.getElementById('tel').value;
 
@@ -63,41 +50,40 @@ $('#jbtn').click(function(){
 	var mailResult = mailPat.test(smail);
 	var telResult = telPat.test(stel);
 	
-	if(idResult && pwResult && spw == srepw && mailResult && telResult) {
-		$('#fid').val(sid);
-		$('#fpw').val(spw);
+	if(idResult && pwResult && mailResult && telResult) {
+		document.getElementById('fid').value = sid;
+		document.getElementById('fpw').value = spw;
 		
 		document.getElementById('frm').submit();
 	} else if(!telResult) {
-		$('#tel').val('');
-		$('#tel').focus();
+		document.getElementById('tel').value = '';
+		document.getElementById('tel').focus();
 	} else if(!mailResult) {
-		$('#mail').val('');
-		$('#mail').focus();
+		document.getElementById('mail').value = '';
+		document.getElementById('mail').focus();
 	} else if(!pwResult) {
-		$('#password').val('');
-		$('#repw').val('');
-		$('#password').focus();
-	} else if(spw != srepw) {
-		$('#password').val('');
-		$('#repw').val('');
-		$('#password').focus();
+		document.getElementById('password').value = '';
+		document.getElementById('password').focus();
 	} else if(!idResult) {
-		$('#id').val('');
-		$('#id').focus();
+		document.getElementById('id').value = '';
+		document.getElementById('id').focus();
 	} else {
-		$('#id').val('');
-		$('#password').val('');
-		$('#repw').val('');
-		$('#mail').val('');
-		$('#tel').val('');
-		$('#id').focus();
+		document.getElementById('id').value = '';
+		document.getElementById('password').value = '';
+		document.getElementById('repw').value = '';
+		document.getElementById('mail').value = '';
+		document.getElementById('tel').value = '';
+		document.getElementById('id').focus();
 	}
 });
 
 // reset
 $('#rbtn').click(function(){
-	document.form1.reset();
-	$('.avatar').css('display', 'none');
+	document.getElementById('name').value = '';
+	document.getElementById('id').value = '';
+	document.getElementById('password').value = '';
+	document.getElementById('repw').value = '';
+	document.getElementById('mail').value = '';
+	document.getElementById('tel').value = '';
+	document.getElementById('mgen').reset;
 });
-

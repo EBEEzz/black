@@ -22,7 +22,7 @@ form {
 }
 div > label {
 	display:inline-block;
-	width: 25%;
+	width: 17%;
 	text-align: right;
 	color: gray;
 }
@@ -32,12 +32,6 @@ div > label {
 	margin-left:5px;
 	padding: 7px;
 }
-#idck {
-	text-align: center;
-}
-#ckmsg {
-	text-align: center;
-}
 .gen{
 	display: inline-block;
 	width: 65%;
@@ -46,9 +40,6 @@ div > label {
 }
 .gen > span {
 	margin-left: 70px;
-}
-.avatar {
-	display: none;
 }
 .male {
 	display: inline-block;
@@ -64,7 +55,7 @@ div > label {
 	padding: 5px;
 	text-align: center;
 	position: relative;
-	left: 0px;
+	left: 51px;
 }
 .male > p {
 	display:block;
